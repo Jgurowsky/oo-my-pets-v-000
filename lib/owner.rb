@@ -1,7 +1,10 @@
 class Owner
   @@owners = Array.new
 
-  def initialize
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
     @@owners << self
   end
 
