@@ -2,9 +2,11 @@ class Owner
   @@owners = Array.new
 
   attr_accessor :name
+  attr_reader :species
 
-  def initialize(name)
+  def initialize(name, species)
     @name = name
+    @species = species
     @@owners << self
   end
 
